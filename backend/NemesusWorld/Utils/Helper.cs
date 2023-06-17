@@ -1462,6 +1462,7 @@ namespace NemesusWorld.Utils
                 if (account == null) return;
 
                 account.crosshair = crosshair;
+                SyncThings(player);
                 SendNotificationWithoutButton(player, "Crosshair erfolgreich ausgewählt!", "success", "top-left", 3500);
             }
             catch (Exception e)
